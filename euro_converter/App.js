@@ -6,9 +6,9 @@ import {
   Button,
   TextInput,
   Alert,
-  Picker,
   Image,
 } from "react-native";
+import { Picker } from "@react-native-community/picker";
 
 export default function App() {
   const [amount, setAmount] = useState("");
@@ -16,9 +16,7 @@ export default function App() {
   const [data, setData] = useState([]);
   const [selectedValue, setSelectedValue] = useState("");
 
-  /* error code 104: Your monthly usage limit has been reached.*/
-  const url =
-    "http://data.fixer.io/api/latest?access_key=54615fac2b5a3f6b7a67957473bdbc78";
+  const url = "http://data.fixer.io/api/latest?access_key=YOUR_API_KEY";
   fetch(url)
     .then((response) => response.json())
     .then((responseJson) => {
@@ -51,13 +49,7 @@ export default function App() {
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         {Object.keys(data.rates).map((key) => {
-          return (
-            <Picker.Item
-              label={this.props.data.rates[key]}
-              value={key}
-              key={key}
-            />
-          );
+          return <Picker.Item label={key} value={key} key={key} />;
         })}
       </Picker>
       <Button title="Convert" onPress={convert} />
