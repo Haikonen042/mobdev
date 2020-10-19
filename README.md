@@ -13,4 +13,5 @@ Mobiiliohjelmointi (syksy 2020), harjoitustehtävät
 - Tehtävä 10: [Shopping list with database](/shopping_list_with_db/App.js)
 - Tehtävä 11: [Contacts](/contacts/App.js)
 - Tehtävä 12: [Text to speech](/text_to_speech/App.js)
-- Tehtävä 13: [My places App](/my_places_app/App.js)
+- Tehtävä 13: [Shopping List with Native Elements](/sh_native_elements/App.js)
+- Tehtävä 14: [My places App](/my_places_app/App.js)
