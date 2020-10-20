@@ -27,7 +27,7 @@ export default function App() {
     updateList();
   }, []);
 
-  // Save course
+  // Save
   const saveItem = () => {
     db.transaction(
       (tx) => {
@@ -44,7 +44,7 @@ export default function App() {
     initialFocus.current.focus();
   };
 
-  // Update courselist
+  // Update
   const updateList = () => {
     db.transaction((tx) => {
       tx.executeSql("select * from shopping;", [], (_, { rows }) =>
@@ -53,7 +53,7 @@ export default function App() {
     });
   };
 
-  // Delete course
+  // Delete
   const deleteItem = (id) => {
     db.transaction(
       (tx) => {
