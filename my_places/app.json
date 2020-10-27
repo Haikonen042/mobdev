@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my_places_app",
-    "slug": "my_places_app",
+    "name": "my_places",
+    "slug": "my_places",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
